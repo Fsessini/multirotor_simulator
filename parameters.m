@@ -1,6 +1,5 @@
-clear all 
+clear variables
 clc
-%addpath('cad_parts')
 %% solver parameters
 %RK4
 ST = 0.01; % time step [s]
@@ -148,10 +147,3 @@ MC_ATT_YAW = 180*pi/180; %[rad]
 MC_RATE_ROLL = 500*pi/180; %[rad/s]
 MC_RATE_PITCH = 500*pi/180; %[rad/s]
 MC_RATE_YAW = 300*pi/180; %[rad/s]
-
-%optical guidance system
-%proportional law from position set point to velocity set point 
-MC_VEL_FWD_OPT = 0.5; % [m/s]
-MC_VEL_LAT_OPT = 0.5; % [m/s]
-TERMINAL_SPEED = 0.5; % constant set-point vertical speed 
-                      % to intercept the target [m/s] (absolute value)
